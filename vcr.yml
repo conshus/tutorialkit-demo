@@ -1,0 +1,17 @@
+project:
+    name: tutorialkit-send-sms
+instance:
+    name: dev
+    runtime: nodejs22
+    region: aws.use1
+    build-script: ./install.sh
+    entrypoint:
+        - npm
+        - run
+        - start
+
+debug:
+    entrypoint:
+        - npm
+        - run
+        - dev
