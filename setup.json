@@ -1,0 +1,10 @@
+{
+    "data": [
+        {
+            "type": "PHONE_NUMBER",
+            "title": "Vonage Number",
+            "description": "A Vonage Number that will be used to send the SMS.",
+            "name": "VONAGE_NUMBER"
+        }
+    ]
+}
