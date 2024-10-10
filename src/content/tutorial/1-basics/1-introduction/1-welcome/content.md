@@ -1,38 +1,34 @@
 ---
 type: lesson
-title: Welcome to TutorialKit
-focus: /counter.js
+title: From Zero to Hero with Vonage Video
+focus: /index.html
+# slug: hello-world
 ---
 
-# Welcome to TutorialKit
+# From Zero to Hero with Vonage Video
 
-Hey there, and welcome to TutorialKit 👋!
+<img src="https://assets.tokbox.com/img/vonage/Vonage_VideoAPI_black.svg" height="48px" alt="Tokbox is now known as Vonage" />
 
-To kick things off, we have prepared a small demo lesson for you, where we'll dive into the concept of event handling in JavaScript. Our task is to resuscitate a lifeless counter app by introducing the crucial element of interactivity: **event listeners**.
+This tutorial will walk you through the process of creating a video call application in just a few steps.
 
-Let's look at the preview on the right for a moment and try to click on the button that says `counter is 0`. We'll notice that it doesn't work.
+We will utilize:
+<details>
+    <summary>Vonage Video API</summary>
+    The <a href="https://developer.vonage.com/en/video/overview" target="_blank">Vonage Video API</a> platform makes it possible to embed real-time, high-quality interactive video, messaging, screen-sharing, and more into web and mobile apps. The platform includes client libraries for the web, mobile, and desktop platform as well as server-side SDKs.
+</details>
 
-In the code for `counter.js`, which you can find on the right, we have a `setupCounter` function responsible for initializing our counter app. However, a crucial component is missing: an event listener for the button.
+<details>
+    <summary>Vonage Video Node Server SDK</summary>
+    The <a href="https://developer.vonage.com/en/video/overview" target="_blank">Vonage Video Node Server SDK</a> lets you create sessions, generate tokens, and work with Vonage Video API for archiving and much more.
+</details>
 
-Event listeners are essential in web development as they enable our applications to respond to user actions. In this case, we need to listen for clicks on the button to increment the counter.
+<details>
+    <summary>Vonage Video JavaScript Client SDK and Web Components</summary>
+    The <a href="https://developer.vonage.com/en/video/client-sdks/web/overview" target="_blank">Vonage Video JavaScript Client SDK</a> unlocks the power of the Video API in the browser. The <a href="https://github.com/Vonage-Community/web_components-video_api-javascript/" target="_blank">Vonage Video Web Components</a> package many of the most common use cases into self-contained elements that can be dropped into any Web application.
+</details>
 
-To address this, we'll call the `addEventListener` to attach a `click` event listener to the button element. When a click is detected, we'll execute a callback function that increments the counter and updates the `innerHTML` accordingly.
+<details>
+    <summary>Vonage Cloud Runtime and Code Hub</summary>
+    <a href="https://developer.vonage.com/en/vonage-cloud-runtime/overview" target="_blank">Vonage Cloud Runtime</a> eliminates the need to host and maintain your own infrastructure to use the Vonage APIs and allows developers to go into production faster. <a href="https://developer.vonage.com/en/cloud-runtime" target="_blank">Code Hub</a> showcases pre-built solutions ready to be deployed to Vonage's serverless platform.
+</details>
 
-```ts add={9}
-export function setupCounter(element) {
-  let counter = 0;
-
-  const setCounter = (count) => {
-    counter = count;
-    element.innerHTML = `count is ${counter}`;
-  };
-
-  element.addEventListener('click', () => setCounter(counter + 1));
-
-  setCounter(0);
-}
-```
-
-This gives you a sneak peak of the TutorialKit experience, demonstrating what it's capable of.
-
-Happy writing!
