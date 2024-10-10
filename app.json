@@ -1,0 +1,40 @@
+{
+  "name": "TutorialKit Send SMS",
+  "description": "SMS onboarding",
+  "keywords": [
+    "WebRTC",
+    "Vonage",
+    "OpenTok",
+    "video",
+    "chat",
+    "communications"
+  ],
+  "website": "https://developer.vonage.com",
+  "repository": "https://github.com/conshus/tutorialkit-demo/tree/send-sms-vcr",
+  "env": {
+    "VONAGE_APPLICATION_ID": {
+      "description": "Vonage Application Id: Login to the Vonage Dashboard (https://dashboard.nexmo.com/applications) to get this value.",
+      "required": true
+    },
+    "PRIVATE_KEY": {
+      "description": "Your Vonage Private Key: Login to the Vonage Dashboard (https://dashboard.nexmo.com/applications) to get this value",
+      "required": true
+    },
+    "PRIVATE_KEY64": {
+      "description": "Your Vonage Private Key as a base64-encoded value ( Linux: cat private.key | base64 -w 0 \n Mac: cat private.key | base64 -b 0 ): Login to the Vonage Dashboard (https://dashboard.nexmo.com/applications) to get this value",
+      "required": true
+    },
+    "VONAGE_API_KEY": {
+      "description": "Your Vonage API Key.",
+      "required": false
+    },
+    "VONAGE_API_SECRET": {
+      "description": "Your Vonage API Secret.",
+      "required": false
+    },
+    "VONGE_NUMBER": {
+      "description": "The phone number linked to your Vonage Application.",
+      "required": true
+    }
+  }
+}
