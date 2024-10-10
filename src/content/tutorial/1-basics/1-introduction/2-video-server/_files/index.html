@@ -15,6 +15,14 @@
     <header>
       <h1>From Zero to Hero with Vonage Video</h1>
     </header>
-        <h2>Welcome!</h2>
-  </body>
+        <input id="server-url"/><button id="save">Save</button>
+    <script>
+      const serverURLInput = document.querySelector('#server-url');
+      const saveButton = document.querySelector('#save');
+      saveButton.addEventListener('click',(event) => {
+        console.log('click: ', serverURLInput.value);
+        localStorage.setItem("serverUrl", serverURLInput.value);
+      });
+    </script>
+</body>
 </html>
