@@ -1,4 +1,4 @@
 ---
 type: part
-title: Send an SMS
+title: Onboarding
 ---

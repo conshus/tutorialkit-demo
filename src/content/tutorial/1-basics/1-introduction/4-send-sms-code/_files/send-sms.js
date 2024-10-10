@@ -17,3 +17,4 @@ const vonage = new Vonage({
   applicationId: process.env.VONAGE_APPLICATION_ID,
   privateKey: privateKey,
 });
+
