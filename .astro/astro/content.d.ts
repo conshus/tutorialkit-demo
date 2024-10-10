@@ -156,49 +156,56 @@ declare module 'astro:content' {
   slug: "1-basics/1-introduction/1-welcome/content";
   body: string;
   collection: "tutorial";
-  data: InferEntrySchema<"tutorial">
+  data: any
 } & { render(): Render[".md"] };
 "1-basics/1-introduction/2-video-server/content.md": {
 	id: "1-basics/1-introduction/2-video-server/content.md";
   slug: "1-basics/1-introduction/2-video-server/content";
   body: string;
   collection: "tutorial";
-  data: InferEntrySchema<"tutorial">
+  data: any
 } & { render(): Render[".md"] };
-"1-basics/1-introduction/3-get-credentials/content.md": {
-	id: "1-basics/1-introduction/3-get-credentials/content.md";
-  slug: "1-basics/1-introduction/3-get-credentials/content";
+"1-basics/1-introduction/3-load-video-sdk/content.md": {
+	id: "1-basics/1-introduction/3-load-video-sdk/content.md";
+  slug: "1-basics/1-introduction/3-load-video-sdk/content";
   body: string;
   collection: "tutorial";
-  data: InferEntrySchema<"tutorial">
+  data: any
 } & { render(): Render[".md"] };
-"1-basics/1-introduction/4-another-step/content.md": {
-	id: "1-basics/1-introduction/4-another-step/content.md";
-  slug: "1-basics/1-introduction/4-another-step/content";
+"1-basics/1-introduction/4-get-credentials/content.md": {
+	id: "1-basics/1-introduction/4-get-credentials/content.md";
+  slug: "1-basics/1-introduction/4-get-credentials/content";
   body: string;
   collection: "tutorial";
-  data: InferEntrySchema<"tutorial">
+  data: any
+} & { render(): Render[".md"] };
+"1-basics/1-introduction/5-another-step/content.md": {
+	id: "1-basics/1-introduction/5-another-step/content.md";
+  slug: "1-basics/1-introduction/5-another-step/content";
+  body: string;
+  collection: "tutorial";
+  data: any
 } & { render(): Render[".md"] };
 "1-basics/1-introduction/meta.md": {
 	id: "1-basics/1-introduction/meta.md";
   slug: "1-basics/1-introduction/meta";
   body: string;
   collection: "tutorial";
-  data: InferEntrySchema<"tutorial">
+  data: any
 } & { render(): Render[".md"] };
 "1-basics/meta.md": {
 	id: "1-basics/meta.md";
   slug: "1-basics/meta";
   body: string;
   collection: "tutorial";
-  data: InferEntrySchema<"tutorial">
+  data: any
 } & { render(): Render[".md"] };
 "meta.md": {
 	id: "meta.md";
   slug: "meta";
   body: string;
   collection: "tutorial";
-  data: InferEntrySchema<"tutorial">
+  data: any
 } & { render(): Render[".md"] };
 };
 
@@ -210,5 +217,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = typeof import("../../src/content/config.js");
+	export type ContentConfig = never;
 }
